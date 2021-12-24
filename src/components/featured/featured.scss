@@ -9,66 +9,70 @@
   .wrapper {
     .carousel-wrapper {
       display: flex;
-      gap: 16px;
-      overflow: hidden;
-      .carousel {
-        width: 350px;
-        height: 150px;
-        border-radius: 12px;
-        position: relative;
-        img.bg {
+      flex-direction: row;
+      overflow-x: hidden;
+      .scroll-x {
+        display: flex;
+        gap: 16px;
+        .carousel {
+          width: 350px;
+          height: 150px;
           border-radius: 12px;
-          object-fit: cover;
-        }
-        .circle {
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          width: 64px;
-          height: 64px;
-          border-radius: 50%;
-          left: 20px;
-          position: absolute;
-          top: -30px;
-          background-color: #747474;
-        }
-        .text {
-          left: 20px;
-          position: absolute;
-          top: 40px;
-          color: #fff;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 21px;
-          span.gold {
-            color: #f4d732;
+          position: relative;
+          img.bg {
+            border-radius: 12px;
+            object-fit: cover;
           }
-          span.grey {
-            display: block;
-            color: var(--secondary);
-            font-size: 12px;
+          .circle {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            left: 20px;
+            position: absolute;
+            top: -30px;
+            background-color: #747474;
           }
-        }
-        .button {
-          background-color: #d73624;
-          position: absolute;
-          bottom: 8px;
-          left: 20px;
-          border-radius: 4px;
-          padding: 8px;
-          display: flex;
-          align-items: center;
-          gap: 4px;
-          span {
+          .text {
+            left: 20px;
+            position: absolute;
+            top: 40px;
             color: #fff;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            span.gold {
+              color: #f4d732;
+            }
+            span.grey {
+              display: block;
+              color: var(--secondary);
+              font-size: 12px;
+            }
           }
-          img-wrapper {
-            width: 32px;
-            height: 32px;
-            background-color: #e64533;
-            img {
-              object-fit: contain;
+          .button {
+            background-color: #d73624;
+            position: absolute;
+            bottom: 8px;
+            left: 20px;
+            border-radius: 4px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            span {
+              color: #fff;
+              font-weight: bold;
+            }
+            img-wrapper {
+              width: 32px;
+              height: 32px;
+              background-color: #e64533;
+              img {
+                object-fit: contain;
+              }
             }
           }
         }

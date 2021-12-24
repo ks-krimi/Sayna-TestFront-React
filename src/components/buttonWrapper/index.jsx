@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import Button from "./Button";
 import "./button.scss";
 
 function ButtonWrapper() {
+  const ref = useRef();
   return (
-    <div className="wrapper">
-      <div className="buttonGroup">
+    <div className="button-wrapper" ref={ref}>
+      <motion.div className="buttonGroup" drag="x" dragConstraints={ref}>
         <Button>Pickup</Button>
         <Button styled>Ratings</Button>
         <Button>Under 30 min</Button>
         <Button select>Price</Button>
-      </div>
+      </motion.div>
     </div>
   );
 }

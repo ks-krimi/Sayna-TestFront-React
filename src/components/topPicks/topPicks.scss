@@ -1,4 +1,5 @@
-.top-picks {
+.top-picks,
+.fastest-near {
   .head-wrapper {
     display: flex;
     justify-content: space-between;
@@ -11,12 +12,16 @@
       font-size: 16px;
     }
   }
+  .wrapper-constraint {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
   .card-wrapper {
     padding-top: 16px;
     display: flex;
     gap: 16px;
     flex-wrap: nowrap;
-    overflow: hidden;
     .card {
       width: 217px;
       .img-wrapper {

@@ -1,5 +1,7 @@
-.wrapper {
-  overflow: hidden;
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
   .buttonGroup {
     display: flex;
     gap: 8px;
