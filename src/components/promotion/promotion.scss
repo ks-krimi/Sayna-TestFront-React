@@ -1,0 +1,34 @@
+.promotion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .promolist {
+    overflow: hidden;
+    display: flex;
+    gap: 12px;
+    .promoItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .imageWrapper {
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 1px #d736240a;
+        border-radius: 12px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 8px;
+      }
+    }
+  }
+}
